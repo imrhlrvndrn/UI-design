@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    list-style: none;
+    color: #004a43;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.workSection {
+    width: 100%;
+    height: auto;
+    padding: 4em 10em;
+}
+
+.workSection > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2em;
+}
+
+.workSection > .workCardGridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.workSection > .workCardGridContainer > .workCard {
+    width: 30%;
+    height: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.workSection > .workCardGridContainer > .workCard > img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.workSection > .workCardGridContainer > .workCard > h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.workSection > .workCardGridContainer > .workCard > p {
+    margin-bottom: 20px;
+}
+
+.workSection > .workCardGridContainer > .workCard > button {
+    padding: 1em 2em;
+    background: #def6f2;
+    color: #000;
+    text-transform: capitalize;
+    border: none;
+}
+
+@media (max-width: 1200px) {
+    .workSection > .workCardGridContainer > .workCard {
+        width: 100%;
+    }
+}
+@media (max-width: 880px) {
+    .workSection {
+        padding: 4em;
+    }
+
+    .workSection > .workCardGridContainer > .workCard {
+        width: 100%;
+    }
+    .workSection > h1 {
+        font-size: 2rem;
+    }
+}
